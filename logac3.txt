@@ -1,0 +1,32 @@
+ heroku logs
+2020-10-09T19:16:28.664973+00:00 app[api]: Release v1 created by user lipe_rodrigo@live.com
+2020-10-09T19:16:28.664973+00:00 app[api]: Initial release by user lipe_rodrigo@live.com
+2020-10-09T19:16:29.246409+00:00 app[api]: Enable Logplex by user lipe_rodrigo@live.com
+2020-10-09T19:16:29.246409+00:00 app[api]: Release v2 created by user lipe_rodrigo@live.com
+2020-10-09T21:32:04.000000+00:00 app[api]: Build started by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.366256+00:00 app[api]: Running release v3 commands by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.366256+00:00 app[api]: Attach DATABASE (@ref:postgresql-fitted-03543) by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.378560+00:00 app[api]: Release v4 created by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.378560+00:00 app[api]: @ref:postgresql-fitted-03543 completed provisioning, setting DATABASE_URL. by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.703271+00:00 app[api]: Deploy 3109f8be by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.703271+00:00 app[api]: Release v5 created by user lipe_rodrigo@live.com
+2020-10-09T21:32:50.725036+00:00 app[api]: Scaled to web@1:Free by user lipe_rodrigo@live.com
+2020-10-09T21:32:55.658792+00:00 heroku[web.1]: Starting process with command `gunicorn gettingstarted.wsgi --log-file -`
+2020-10-09T21:32:58.424122+00:00 app[web.1]: [2020-10-09 21:32:58 +0000] [4] [INFO] Starting gunicorn 20.0.4
+2020-10-09T21:32:58.425728+00:00 app[web.1]: [2020-10-09 21:32:58 +0000] [4] [INFO] Listening at: http://0.0.0.0:54820 (4)
+2020-10-09T21:32:58.425889+00:00 app[web.1]: [2020-10-09 21:32:58 +0000] [4] [INFO] Using worker: sync
+2020-10-09T21:32:58.435451+00:00 app[web.1]: [2020-10-09 21:32:58 +0000] [10] [INFO] Booting worker with pid: 10
+2020-10-09T21:32:58.480799+00:00 app[web.1]: [2020-10-09 21:32:58 +0000] [11] [INFO] Booting worker with pid: 11
+2020-10-09T21:33:00.000000+00:00 app[api]: Build succeeded
+2020-10-09T21:33:00.007679+00:00 heroku[web.1]: State changed from starting to up
+2020-10-09T21:33:43.905611+00:00 heroku[router]: at=info method=GET path="/" host=shielded-earth-51709.herokuapp.com request_id=1d3ab3d8-09db-465e-a1f4-6439262c6e4a fwd="201.75.169.228" dyno=web.1 connect=4ms service=37ms status=200 bytes=7671 protocol=https
+2020-10-09T21:33:43.905796+00:00 app[web.1]: 10.79.206.66 - - [09/Oct/2020:21:33:43 +0000] "GET / HTTP/1.1" 200 7423 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+2020-10-09T21:33:44.211282+00:00 app[web.1]: 10.79.206.66 - - [09/Oct/2020:21:33:44 +0000] "GET /static/lang-logo.png HTTP/1.1" 200 0 "https://shielded-earth-51709.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+2020-10-09T21:33:44.211501+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=shielded-earth-51709.herokuapp.com request_id=83764222-bfff-4db7-9ec0-8013ee3dd657 fwd="201.75.169.228" dyno=web.1 connect=0ms service=4ms status=200 bytes=2498 protocol=https
+2020-10-09T21:33:44.605835+00:00 app[web.1]: Not Found: /favicon.ico
+2020-10-09T21:33:44.608286+00:00 app[web.1]: 10.79.206.66 - - [09/Oct/2020:21:33:44 +0000] "GET /favicon.ico HTTP/1.1" 404 2229 "https://shielded-earth-51709.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+2020-10-09T21:33:44.609547+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=shielded-earth-51709.herokuapp.com request_id=d4b9b8bd-315e-46ff-9b5b-e43b3c344024 fwd="201.75.169.228" dyno=web.1 connect=3ms service=25ms status=404 bytes=2469 protocol=https
+2020-10-09T21:51:02.190020+00:00 app[web.1]: 10.52.12.238 - - [09/Oct/2020:21:51:02 +0000] "GET / HTTP/1.1" 200 7423 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+2020-10-09T21:51:02.190929+00:00 heroku[router]: at=info method=GET path="/" host=shielded-earth-51709.herokuapp.com request_id=d7a0a6ad-9b89-41b9-89ce-4fc3103c814f fwd="201.75.169.228" dyno=web.1 connect=0ms service=25ms status=200 bytes=7671 protocol=https
+2020-10-09T21:51:02.475223+00:00 app[web.1]: 10.52.12.238 - - [09/Oct/2020:21:51:02 +0000] "GET /static/lang-logo.png HTTP/1.1" 304 0 "https://shielded-earth-51709.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"
+2020-10-09T21:51:02.476163+00:00 heroku[router]: at=info method=GET path="/static/lang-logo.png" host=shielded-earth-51709.herokuapp.com request_id=310a8ef3-d608-4d0b-bebb-b8a2dc4c2fda fwd="201.75.169.228" dyno=web.1 connect=0ms service=3ms status=304 bytes=166 protocol=https
